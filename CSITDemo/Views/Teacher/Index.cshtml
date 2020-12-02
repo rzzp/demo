@@ -1,0 +1,21 @@
+﻿
+@model List<CSITDemo.Models.TeacherModel>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Subject</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teacher in Model)
+        {
+            <tr>
+                <td>@teacher.Name</td>
+                <td>@teacher.Subject</td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
